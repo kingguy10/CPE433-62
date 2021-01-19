@@ -53,7 +53,7 @@ namespace DNWS
       }
 
       String[] statusLine = Regex.Split(lines[0], "\\s");
-      if(statusLine.Length != 4) { // too short something is wrong
+      if(statusLine.Length != 4) { // too short something is wrong?
         _status = 401;
         return;
       }
